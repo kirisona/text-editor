@@ -6,6 +6,7 @@
 
 body {
     background-color: #464f54;
+    padding-top: 150px;
 }
 
 .wrapper {
@@ -36,6 +37,11 @@ body {
     line-height: 2em;
 }
 
+.article-author {
+    text-transform: uppercase;
+    letter-spacing: 0.219em;
+}
+
 .header {
     margin-bottom: 25px;
 }
@@ -47,4 +53,128 @@ body {
 
 .article-content {
     text-align: justify;
+}
+
+body {
+    position: relative;
+}
+
+.form-editor {
+    position: absolute;
+    right: 0;
+    top: 47px;
+    max-width: 878px;
+    width: 80%;
+}
+
+.form-title {
+    position: relative;
+    height: 188px;
+    background-color: #181818;
+    padding: 50px 0 50px 60px;
+}
+
+.form-input {
+    display: block;
+    background-color: transparent;
+    border: none;
+    border-bottom: 4px solid #303030;
+    font-size: 48px;
+    font-family: 'Playfair Display', serif;
+    color: #fefefe;
+    line-height: 1.9583;
+    width: 100%;
+}
+
+.form-label {
+    position: absolute;
+    left: 60px;
+    top: 50px;
+    color: #767676;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+}
+
+.form-bottom {
+    height: 78px;
+    background-color: #f9bf2d;
+    padding: 0 43px;
+    display: flex;
+    -webkit-align-items: center;
+            align-items: center;
+    width: calc(100% - 65px);
+    margin-left: 65px;
+}
+
+.form-text-decoration {
+    width: 33px;
+    height: 33px;
+    background-color: transparent;
+    border: none;
+    opacity: 0.5;
+    color: #fff;
+    padding: 0;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+.form-text-decoration + .form-text-decoration {
+    margin-left: 32px;
+}
+
+.form-text-decoration:hover,
+.form-text-decoration:focus {
+    opacity: 1;
+}
+
+.text-decoration_color {
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.text-decoration_uppercase small{
+    font-size: 60%;
+}
+
+.text-decoration_bold {
+    font-weight: bold;
+}
+
+.text-decoration_italic {
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.text-decoration_underline {
+    text-decoration: underline;
+} 
+
+.form-text-decoration span {
+    display: block;
+    height: 3px;
+    background-color: #fff;
+    margin-bottom: 3px;
+    
+}
+
+.form-text-decoration span:last-child {
+    margin-bottom: 0;
+}
+
+.text-decoration_left span:nth-child(even) {
+    width: 20px;
+    position: relative;
+    left: 0;
+}
+
+.text-decoration_right span:nth-child(even) {
+    width: 20px;
+    position: relative;
+    right: 0;
+    margin-left: 13px;
+}
+
+.text-decoration_center span:nth-child(even) {
+    width: 20px;
+    
 }

@@ -176,5 +176,5 @@ body {
 
 .text-decoration_center span:nth-child(even) {
     width: 20px;
-    
+    margin-left: 0.39em;   
 }
